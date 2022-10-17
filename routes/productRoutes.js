@@ -19,7 +19,7 @@ const {
 
 // user routes
 router.route("/products").get(getAllProduct);
-router.route("product/:id").get(getOneProduct)
+router.route("/product/:id").get(getOneProduct)
 router.route("/review").put(isLoggedIn, addReview)
 router.route("/review").delete(isLoggedIn, deleteReview)
 router.route("/reviews").get(isLoggedIn, getAllReviewsForOneProduct)
